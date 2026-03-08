@@ -1,4 +1,4 @@
-# Homelab Network Stack
+# Homelab Network Config
 This repository contains the configuration and documentation for my personal homelab network infrastructure. It details the setup, services, and various components that make up my home network environment.
 
   ## Table of Contents
