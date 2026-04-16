@@ -42,7 +42,7 @@ To eliminate the overhead of a local IdP, this lab leverages **Google Identity**
 * `./agent/`: Prompts, logic, and RAG documentation for the Ubiquiti Support Agent.
 * `./kubernetes/`: Helm charts and manifests for the Talos/K3s cluster.
 * `./networking/`: VLAN definitions, IP schemes, and UniFi configuration backups.
-* `./terraform/`: Infrastructure-as-Code for Cloudflare Tunnels and DNS.
+* `./terraform/`: Infrastructure-as-Code for Configuration Files.
 * `./diagrams/`: Logical and physical network topology.
 
 ## The Network Agent
