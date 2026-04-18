@@ -7,13 +7,13 @@ locals {
     "cbr-hill-k8s-cp-03" = { ip = "10.1.10.13", mac = "BC:24:11:00:00:03" }
   }
   cluster_name     = "cbr-hill-k8s-cluster-01"
-  cluster_endpoint = "https://10.1.10.11:6443" # Using the first node as the API endpoint
+  cluster_endpoint = "https://10.1.10.11:6443" #Using the first node as the API endpoint
 }
 
 resource "proxmox_virtual_environment_vm" "talos_cp" {
   for_each  = local.nodes
   name      = each.key
-  node_name = "pve" # Change this to your Proxmox node name
+  node_name = "cbr-hill-hypervisor-01"
 
   cpu {
     cores = 2
@@ -25,7 +25,7 @@ resource "proxmox_virtual_environment_vm" "talos_cp" {
   }
 
   disk {
-    datastore_id = "local-lvm" # Change to your fast SSD/NVMe datastore
+    datastore_id = "local-lvm"
     file_format  = "raw"
     interface    = "virtio0"
     size         = 20
