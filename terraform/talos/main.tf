@@ -14,7 +14,7 @@ locals {
   }
   
   cluster_name     = "cbr-hill-k8s-cluster-01"
-  cluster_endpoint = "https://10.1.10.11:6443" 
+  cluster_endpoint = "https://10.1.10.21:6443" 
 }
 
 # --- CONTROL PLANE VMs ---
