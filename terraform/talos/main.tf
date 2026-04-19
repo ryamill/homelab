@@ -40,8 +40,9 @@ resource "proxmox_virtual_environment_vm" "talos_cp" {
   }
 
   network_device {
-    bridge      = "vmbr0"
+    bridge      = "vmbr1"
     mac_address = each.value.mac
+    vlan_id     = 10
   }
 
   cdrom {
